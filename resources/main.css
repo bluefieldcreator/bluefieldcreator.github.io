@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     background-color: black;
     font-family: "Rubik", Arial, Helvetica, sans-serif;
