@@ -1,0 +1,9 @@
+* {
+    background-color: black;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
