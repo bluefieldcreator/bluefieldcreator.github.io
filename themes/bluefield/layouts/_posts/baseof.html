@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  <div class="mx-auto h-[910px] w-fit">
+    <div class="h-full overflow-y-visible bg-white">
+
+      {{ partial "header.html" . }}
+
+      {{ block "main" . }}{{ end }}
+    </div>
+    <div class="mx-auto border-y-4 border-black bg-black p-2 text-white">
+      By yours truly,
+      <span class="bg-transparent font-sans font-bold text-blue-500">bluefield</span>
+    </div>
+  </div>
+</body>
+
+</html>

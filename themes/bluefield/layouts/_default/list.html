@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="p-5  prose prose-slate ">
+  <h1 class="text-blue-400">{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+  {{ end }}
+  </div>
+
+{{ end }}
